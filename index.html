@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="x-ua-compatible" content="ie-edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="..static/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="..static/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="..static/img/favicon-16x16.png">
+    
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <title>Lp - Desafio</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <div class="navbar">
+            <img src="static/img/logo-nitendo.png" alt="logo" class="logo">
+            <nav>
+                <ul id="mainmenu">
+                    <li><a href="#">Come to 80's</a></li>
+                    <li><a href="#">How to play</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </nav>
+            <div class="menu-icon" onclick="toggleMenu()"></div>
+        </div>
+        <!-- Content -->
+        <div class="row">
+            <div class="col-1">
+                <h2>New Autis <br />Wireless 4</h2>
+                <h3>Super Nitendo Controll</h3>
+                <p>(Oficial Store)</p>
+                <h4>Come soon</h4>
+                <!-- <button type="button">Compre Agora<span>&#9660;
+                </span></button> -->
+            </div>
+            <div class="col-2">
+                <img src="static/img/nitendo.png" alt="controller" class="joystick">
+                <div class="color-box"></div>
+            </div>
+        </div>
+        <div class="form">
+            <form action="" class="inline-form">
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <button class="getin">Notify Me</button>
+            </form>
+        </div>
+        <div class="footer">
+            <a href="https://www.instagram.com/gabrielrochaas" target="_blank">
+                <img src="static/img/ig.png" alt="instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/gabrielrochaas" target="_blank">
+                <img src="static/img/li.png" alt="linkedin">
+            </a>
+            <a href="https://www.github.com/gabrielrochas" target="_blank">
+                <img src="static/img/gh.png" alt="github">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const mainMenu = document.getElementById('mainmenu');
+        mainMenu.style.maxHeight = "0px";
+
+       function toggleMenu() {
+            if(mainMenu.style.maxHeight === "0px") {
+                mainMenu.style.maxHeight = "130px";
+            }
+            else {
+                mainMenu.style.maxHeight = "0px";
+            }
+        }
+    </script> 
+</body>
+</html>
